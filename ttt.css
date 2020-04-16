@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    background-color: rgb(0, 0, 75);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display:inline-flex;
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+}
+.content{
+    padding: 20px 0 0 80px;
+}
+#rules {
+    margin-top: 100px;
+}
+#game {
+    display: border-box;
+    font-family: 'Rock Salt', cursive;
+}
+#players {
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    display:block;
+    border-collapse:collapse;
+    border-spacing: 0;
+    margin: auto;
+}
+form {
+    display: inline-block;
+}
+.gameButton {
+    
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    font-size: 2.5em;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+    font-family: 'Rock Salt', cursive;
+
+}
+td {
+    border: none;
+    color:#ffffff;
+    margin:20px;
+    display:inline-flex;
+}
+.winner{
+    font-size: 3em;
+    color: yellow;
+    margin: -30px;
+}
+
+
+@media (max-width: 1024px)  {
+    .container {
+        display:inline-block;
+    }
+    .content{
+    padding: 0;
+    }
+    #rules {
+        margin-top: 0;
+    }
+    
+    td {
+        margin: 5px;
+    }
+    #game {
+        display:block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .gameButton {
+        width: 80px;
+        height: 80px;
+        font-size: 1em;
+    }
+}

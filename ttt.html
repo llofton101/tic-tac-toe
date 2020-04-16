@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Tic-Tac-Toe</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<link href="../css/navigation.css" rel="stylesheet" />
+<link href="./ttt.css" rel="stylesheet" />
+<link href="./ttt.js">
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<meta name="author" content="Lauren Lofton" />
+<link rel='icon' href='../img/favicon.png' type='image/x-icon'/>
+
+</head>
+
+
+
+<body>
+<div class="container">
+    <div class="content" id="rules">
+        <h1>Tic-Tac-Toe</h1>
+        <p>The goal is to get three boxes in a row (across, down, or diagonally).</p>
+        <p>The game ends either when one player wins or there is a tie.</p>
+        <p>Click on a sqare to begin the game. </p>
+        <button id="button" onclick="reset()">Reset</button>
+        <div id="popup">
+            <div class = "winner">
+                <p id="text"> </p>
+            </div>
+        </div>
+     
+    </div>
+    <div class="content" id="game">
+        <p id="overlay"></p>
+        <p id="players"><i>*This game is for 2 players</i></p>
+        <form>
+            <table>
+                <tr>
+                    <td><input type="button" id="1" class="gameButton" onclick="b(1)" value=" "/></td>
+                    <td><input type="button" id="2" class="gameButton" onclick="b(2)" value=" "/></td>
+                    <td><input type="button" id="3" class="gameButton" onclick="b(3)" value=" "/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="4" class="gameButton" onclick="b(4)" value=" "/></td>
+                    <td><input type="button" id="5" class="gameButton" onclick="b(5)" value=" "/></td>
+                    <td><input type="button" id="6" class="gameButton" onclick="b(6)" value=" "/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="7" class="gameButton" onclick="b(7)" value=" "/></td>
+                    <td><input type="button" id="8" class="gameButton" onclick="b(8)" value=" "/></td>
+                    <td><input type="button" id="9" class="gameButton" onclick="b(9)" value=" "/></td>
+                </tr>
+            </table>
+        </form>
+</div>
+<script src="./ttt.js"></script>   
+</div>
+</body>
+</html>
